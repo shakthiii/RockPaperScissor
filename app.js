@@ -73,33 +73,28 @@ const GameBegin = (userValue, computerValue) => {
   } else if (userValue == "rock" && computerValue == "scissors") {
     console.log("user wins");
     winnerText.textContent = `Player Wins!`;
-
     score[1] += 1;
-    player.textContent = score[0];
+    player.textContent = score[1];
   } else if (userValue == "paper" && computerValue == "rock") {
     console.log("Player Wins");
     winnerText.textContent = `Player Wins!`;
-
     score[1] += 1;
-    player.textContent = score[0];
+    player.textContent = score[1];
   } else if (userValue == "paper" && computerValue == "scissors") {
     console.log("computer wins");
     winnerText.textContent = `Computer Wins!`;
-
     score[0] += 1;
     computer.textContent = score[0];
   } else if (userValue == "scissors" && computerValue == "rock") {
     console.log("computer wins");
     winnerText.textContent = `Computer Wins!`;
-
     score[0] += 1;
     computer.textContent = score[0];
   } else if (userValue == "scissors" && computerValue == "paper") {
     console.log("user wins");
     winnerText.textContent = `Player Wins!`;
-
     score[1] += 1;
-    player.textContent = score[0];
+    player.textContent = score[1];
   } else {
     console.log("draw");
     winnerText.textContent = `It is a tie!`;
